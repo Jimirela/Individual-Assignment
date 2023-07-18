@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zimi Gallery</title>
+  <link rel="icon" type="image/x-icon" href="images/WZ logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/9e9e882896.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <style>
+        .heading {
+        text-align: center;
+        font-size: 2.0em;
+        letter-spacing: 1px;
+        padding: 40px;
+        color: white;
+    }
+    
+        .gallery-image {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+        .gallery-image img {
+        height: 250px;
+        width: 350px;
+        transform: scale(1.0);
+        transition: transform 0.4s ease;
+    }
+    
+        .img-box {
+        box-sizing: content-box;
+        margin: 10px;
+        height: 250px;
+        width: 350px;
+        overflow: hidden;
+        display: inline-block;
+        color: white;
+        position: relative;
+        
+    }
+    
+        .caption {
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+        opacity: 0.0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+        .transparent-box {
+        height: 250px;
+        width: 350px;
+        background-color:rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: background-color 0.3s ease;
+    }
+    
+        .img-box:hover img { 
+        transform: scale(1.1);
+    }
+    
+        .img-box:hover .transparent-box {
+        background-color:rgba(0, 0, 0, 0.5);
+    }
+    
+        .img-box:hover .caption {
+        transform: translateY(-20px);
+        opacity: 1.0;
+    }
+    
+        .img-box:hover {
+        cursor: pointer;
+    }
+    
+        .caption > p:nth-child(2) {
+        font-size: 0.8em;
+    }
+    
+        .opacity-low {
+        opacity: 0.5;
+    }
+     </style>
+    </head>
+
+    <body class="light-theme">
+        <header>
+      
+          <div class="container">
+      
+            <nav class="navbar">
+      
+              <a href="index.html">
+                <img src="images/WZ logo.jpg" alt="Fr logo" width="90" class="logo-light">
+              </a>
+      
+              <div class="btn-group">
+      
+                <button class="nav-menu-btn">
+                  <ion-icon name="menu-outline"></ion-icon>
+                </button>
+      
+              </div>
+      
+              <div class="flex-wrapper">
+      
+                <ul class="desktop-nav">
+      
+                  <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                  </li>
+      
+                  <li>
+                    <a href="biodata.html" class="nav-link">About Me</a>
+                  </li>
+    
+                  <li>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                  </li>
+      
+                  <li>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                  </li>
+       
+                </ul>
+      
+              </div>
+      
+              <div class="mobile-nav">
+      
+                <button class="nav-close-btn">
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+      
+                <div class="left" style="margin-top: 10px;">
+      
+                  <div class="pattern-bg"></div>
+                  <div class="img-box">
+                    <img src="images/WZ logo.jpg" alt="FR" width="150" class="hero-img">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                  </div>
+        
+                </div>
+        
+                <div class="wrapper" style="margin-left: 24px;">
+      
+                  <p class="h3 nav-title">Main Menu</p>
+      
+                  <ul>
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link">Home</a>
+                    </li>
+      
+                    <li class="nav-item">
+                      <a href="biodata.html" class="nav-link">About Me</a>
+                    </li>
+      
+                    <li class="nav-item">
+                      <a href="contact.html" class="nav-link">Contact Me</a>
+                    </li>
+      
+                    <li class="nav-item">
+                      <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+       
+                  </ul>
+      
+              </div>
+      
+            </nav>
+      
+          </div>
+      
+        </header>
+
+        <!---GALLERY-->
+
+        
+  <div class="main">
+	<h1>Gallery</h1>
+  <style>
+    h1 {color:white;}
+    h1 {margin-top: -50px;}
+  </style>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="images/LAWATAN.jpeg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Bank Negara Visit</p>
+          <p class="opacity-low">Tunku Abdul Rahman Stair</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/KELAS.jpeg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Classmate Photoshoot Session</p>
+          <p class="opacity-low">IM110A</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/MADAM.jpeg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>After Class AACR</p>
+          <p class="opacity-low">With Madam Faraliza</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/bbq.jpeg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>BBQ with my geng</p>
+          <p class="opacity-low">Healing</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/perok.jpeg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Vacation</p>
+          <p class="opacity-low">Ipoh</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/Graduation.jpeg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Graduation Form 5</p>
+          <p class="opacity-low">With my panjat pagar geng</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="images/Kehidupan.jpeg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>What is life tutorial</p>
+          <p class="opacity-low">Last freedom geng</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+        <img src="images/love.jpeg" alt="" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>Quality Time</p>
+            <p class="opacity-low">With my safe place</p>
+          </div>
+        </div> 
+      </div>
+      <div class="img-box">
+        <img src="images/cuti.jpeg" alt="" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>Second Vacation</p>
+            <p class="opacity-low">Kellie's Castle</p>
+          </div>
+        </div> 
+      </div>
+	    </div>
+  
+  <!--- #FOOTER --->
+  
+  <footer>
+  
+    <div class="container">
+
+      <div class="wrapper">
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href=https://nsembilan.uitm.edu.my/rembau/ class="footer-link">UiTMCNS</a>
+          </li>
+
+          <li>
+            <a href="https://www.uitm.edu.my/index.php/ms/kenali-uitm/tentang-uitm" class="footer-link">About UITM</a>
+          </li>
+
+          <li>
+            <a href="https://hea.uitm.edu.my/v4/index.php/corporate/contact-us" class="footer-link">Contact UITM</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Social Media</p>
+
+        <ul>
+
+          <li>
+            <a href="https://www.facebook.com/azimiejimie" class="footer-link">Facebook</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/wanazimi_/" class="footer-link">Instagram</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
